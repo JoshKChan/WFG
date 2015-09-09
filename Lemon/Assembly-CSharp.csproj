@@ -54,7 +54,10 @@
      <Compile Include="Assets\2D-Roguelike\Completed\Scripts\Player.cs" />
      <Compile Include="Assets\2D-Roguelike\Completed\Scripts\SoundManager.cs" />
      <Compile Include="Assets\2D-Roguelike\Completed\Scripts\Wall.cs" />
+     <Compile Include="Assets\Scrpits\ClickDrag.cs" />
+     <Compile Include="Assets\Scrpits\Comment.cs" />
      <Compile Include="Assets\Scrpits\FPSDisplay.cs" />
+     <Compile Include="Assets\Scrpits\LemmingScript.cs" />
      <Compile Include="Assets\Scrpits\MouseInfo.cs" />
      <None Include="Assets\2D-Roguelike\Fonts\OFL.txt" />
  <Reference Include="UnityEngine.UI">
