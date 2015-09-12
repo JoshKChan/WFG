@@ -57,8 +57,10 @@
      <Compile Include="Assets\Scrpits\ClickDrag.cs" />
      <Compile Include="Assets\Scrpits\Comment.cs" />
      <Compile Include="Assets\Scrpits\FPSDisplay.cs" />
+     <Compile Include="Assets\Scrpits\Geomancy.cs" />
      <Compile Include="Assets\Scrpits\LemmingScript.cs" />
      <Compile Include="Assets\Scrpits\MouseInfo.cs" />
+     <Compile Include="Assets\Scrpits\Vortex.cs" />
      <None Include="Assets\2D-Roguelike\Fonts\OFL.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

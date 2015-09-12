@@ -3,6 +3,8 @@ using System.Collections;
 
 public class LemmingScript : MonoBehaviour {
 
+	public float speedFactor;
+
 	// Use this for initialization
 	void Start () {
 	
@@ -19,6 +21,6 @@ public class LemmingScript : MonoBehaviour {
 	 * TODO Only move when "feet" are on some kind of "ground"?
 	 */
 	void MoveForward(){
-		transform.Translate(Vector3.right * Time.deltaTime);
+		transform.Translate(Vector3.right * Time.deltaTime * speedFactor);
 	}
 }
