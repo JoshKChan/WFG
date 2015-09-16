@@ -5,11 +5,11 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{B33C27E1-036E-F7F5-FED1-5440EE0C9F92}</ProjectGuid>
+	<ProjectGuid>{0C2E8AF3-A141-7186-FD9D-04B2D2741297}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
-	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<AssemblyName>Assembly-CSharp-Editor</AssemblyName>
 	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
 	<FileAlignment>512</FileAlignment>
 	<BaseDirectory>Assets</BaseDirectory>
@@ -46,32 +46,54 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\2D-Roguelike\Completed\Scripts\BoardManager.cs" />
-     <Compile Include="Assets\2D-Roguelike\Completed\Scripts\Enemy.cs" />
-     <Compile Include="Assets\2D-Roguelike\Completed\Scripts\GameManager.cs" />
-     <Compile Include="Assets\2D-Roguelike\Completed\Scripts\Loader.cs" />
-     <Compile Include="Assets\2D-Roguelike\Completed\Scripts\MovingObject.cs" />
-     <Compile Include="Assets\2D-Roguelike\Completed\Scripts\Player.cs" />
-     <Compile Include="Assets\2D-Roguelike\Completed\Scripts\SoundManager.cs" />
-     <Compile Include="Assets\2D-Roguelike\Completed\Scripts\Wall.cs" />
-     <Compile Include="Assets\Scrpits\ClickDrag.cs" />
-     <Compile Include="Assets\Scrpits\Comment.cs" />
-     <Compile Include="Assets\Scrpits\FPSDisplay.cs" />
-     <Compile Include="Assets\Scrpits\Football.cs" />
-     <Compile Include="Assets\Scrpits\Geomancy.cs" />
-     <Compile Include="Assets\Scrpits\GoalTrigger.cs" />
-     <Compile Include="Assets\Scrpits\LemmingScript.cs" />
-     <Compile Include="Assets\Scrpits\MouseInfo.cs" />
-     <Compile Include="Assets\Scrpits\ScoreCounter.cs" />
-     <Compile Include="Assets\Scrpits\ScoreDisplay.cs" />
-     <Compile Include="Assets\Scrpits\Vortex.cs" />
+     <Compile Include="Assets\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs" />
      <None Include="Assets\2D-Roguelike\Fonts\OFL.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
+ <Reference Include="UnityEditor.UI">
+ <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Graphs">
+ <HintPath>D:/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Android.Extensions">
+ <HintPath>D:/Unity/Editor/Data/PlaybackEngines/androidplayer/UnityEditor.Android.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions">
+ <HintPath>D:/Unity/Editor/Data/PlaybackEngines/iossupport/UnityEditor.iOS.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.WP8.Extensions">
+ <HintPath>D:/Unity/Editor/Data/PlaybackEngines/wp8support/UnityEditor.WP8.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Metro.Extensions">
+ <HintPath>D:/Unity/Editor/Data/PlaybackEngines/metrosupport/UnityEditor.Metro.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.BB10.Extensions">
+ <HintPath>D:/Unity/Editor/Data/PlaybackEngines/blackberryplayer/UnityEditor.BB10.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.SamsungTV.Extensions">
+ <HintPath>D:/Unity/Editor/Data/PlaybackEngines/stvplayer/STVPlayer/UnityEditor.SamsungTV.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.WebGL.Extensions">
+ <HintPath>D:/Unity/Editor/Data/PlaybackEngines/webglsupport/UnityEditor.WebGL.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.LinuxStandalone.Extensions">
+ <HintPath>D:/Unity/Editor/Data/PlaybackEngines/linuxstandalonesupport/UnityEditor.LinuxStandalone.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+ <HintPath>D:/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.OSXStandalone.Extensions">
+ <HintPath>D:/Unity/Editor/Data/PlaybackEngines/macstandalonesupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>D:/Unity/Editor/Data/PlaybackEngines/iossupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-vs.csproj">
+      <Project>{B33C27E1-036E-F7F5-FED1-5440EE0C9F92}</Project>      <Name>Assembly-CSharp-vs</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

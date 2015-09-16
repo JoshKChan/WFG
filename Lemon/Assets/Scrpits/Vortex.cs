@@ -48,7 +48,7 @@ public class Vortex : MonoBehaviour {
 				//force = 1;
 				//force = maximumRange - distance; //too strong
 				force = Mathf.Abs(1-(distance/maximumRange));
-				force *= 1.2f;
+				force *= 3.2f;
 			}
 			Debug.Log("Distance: "+distance+"\tForce: "+force);
 		}
@@ -65,9 +65,9 @@ public class Vortex : MonoBehaviour {
 					rigidBody.AddForce (new Vector2 (0, force), ForceMode2D.Impulse);
 				}
 			}
-			//Debug.Log("exertForce()");
+			Debug.Log("exertForce()");
 		} else {
-			//Debug.Log("No ground container. Cannot exertForce()");
+			Debug.Log("No ground container. Cannot exertForce()");
 		}
 	}
 
