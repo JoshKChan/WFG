@@ -1,2 +1,16 @@
 /Lemon/Temp
 /Lemon/Library
+obj
+Temp
+*.suo
+*.user
+*.pidb
+*.userprefs
+Library
+*.sln
+*.unityproj
+*.csproj
+*.csproj
+Lemon/Assembly-CSharp-Editor.csproj
+Lemon/Assembly-CSharp-Editor.csproj
+*.csproj
